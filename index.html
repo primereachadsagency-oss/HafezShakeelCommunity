@@ -1,632 +1,389 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>𝗦𝗔𝗟𝗠𝗔𝗡 𝗠𝗘𝗠𝗢𝗡 𝗧𝗥𝗔𝗗𝗘𝗥 𝗜𝗡𝗗𝗜𝗔 (𝗛𝗮𝗹𝗮𝗹 𝗪𝗼𝗿𝗸) </title>
-    <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
-   
-    <!-- Meta Pixel Code -->
-<script>
-!function(f,b,e,v,n,t,s)
-{if(f.fbq)return;n=f.fbq=function(){n.callMethod?
-n.callMethod.apply(n,arguments):n.queue.push(arguments)};
-if(!f._fbq)f._fbq=n;n.push=n;n.loaded=!0;n.version='2.0';
-n.queue=[];t=b.createElement(e);t.async=!0;
-t.src=v;s=b.getElementsByTagName(e)[0];
-s.parentNode.insertBefore(t,s)}(window, document,'script',
-'https://connect.facebook.net/en_US/fbevents.js');
-fbq('init', '945662787944043');
-fbq('track', 'PageView');
-</script>
-<noscript><img height="1" width="1" style="display:none"
-src="https://www.facebook.com/tr?id=945662787944043&ev=PageView&noscript=1"
-/></noscript>
-<!-- End Meta Pixel Code -->
-    
-    <style>
-        :root {
-            --bg-main: #090a0f;
-            --card-bg: rgba(255, 255, 255, 0.03);
-            --card-border: rgba(255, 255, 255, 0.08);
-            --accent-blue: #229ED9;
-            --accent-glow: rgba(34, 158, 217, 0.35);
-            --text-primary: #ffffff;
-            --text-secondary: #94a3b8;
-            --green-glow: #22c55e;
-        }
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Official Hafez Shakeel</title>
+  <!-- Google Fonts Optimized Loading -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@600;700&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+  
+  <style>
+    :root {
+      --bg-color: #0d0d0d;
+      --card-bg: #0f0f11;
+      --gold-border: rgba(212, 160, 23, 0.35);
+      --text-main: #ffffff;
+      --text-muted: #999999;
+      --text-gold: #d4af37;
+      --btn-bg: linear-gradient(180deg, #ffc75f 0%, #ff9f1c 100%);
+      --btn-shadow: 0 4px 25px rgba(255, 159, 28, 0.4);
+    }
 
-        * {
-            margin: 0;
-            padding: 0;
-            box-sizing: border-box;
-        }
+    * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+    }
 
-        body {
-            background-color: var(--bg-main);
-            font-family: 'Plus Jakarta Sans', sans-serif;
-            color: var(--text-primary);
-            min-height: 100vh;
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            padding: 20px 12px;
-            background-image: 
-                radial-gradient(circle at 50% 0%, rgba(34, 158, 217, 0.15) 0%, transparent 60%),
-                radial-gradient(circle at 80% 100%, rgba(34, 217, 158, 0.05) 0%, transparent 50%);
-        }
+    body {
+      background-color: var(--bg-color);
+      color: var(--text-main);
+      font-family: 'Inter', sans-serif;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      min-height: 100vh;
+      padding: 15px;
+    }
 
-        .page-container {
-            width: 100%;
-            max-width: 480px;
-            background: rgba(18, 20, 29, 0.7);
-            backdrop-filter: blur(20px);
-            -webkit-backdrop-filter: blur(20px);
-            border: 1px solid var(--card-border);
-            border-radius: 28px;
-            padding: 24px;
-            box-shadow: 0 20px 50px rgba(0, 0, 0, 0.5);
-            position: relative;
-            overflow: hidden;
-        }
+    /* Mobile Container with Gold Glowing Border */
+    .landing-card {
+      width: 100%;
+      max-width: 420px;
+      background: var(--card-bg);
+      border-radius: 28px;
+      border: 1px solid var(--gold-border);
+      box-shadow: 0 0 35px rgba(212, 175, 55, 0.08);
+      padding: 32px 24px;
+      text-align: center;
+      position: relative;
+    }
 
-        .page-container::before {
-            content: '';
-            position: absolute;
-            top: -100px;
-            left: 50%;
-            transform: translateX(-50%);
-            width: 200px;
-            height: 200px;
-            background: var(--accent-blue);
-            filter: blur(80px);
-            opacity: 0.4;
-            pointer-events: none;
-        }
+    /* Profile Avatar with Gold Border Glow */
+    .profile-container {
+      width: 105px;
+      height: 105px;
+      margin: 0 auto 20px;
+      border-radius: 50%;
+      padding: 3px;
+      background: linear-gradient(135deg, #ffd700, #b8860b, #ffd700);
+      box-shadow: 0 0 15px rgba(212, 175, 55, 0.3);
+    }
 
-        .top-bar {
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            margin-bottom: 24px;
-        }
+    .profile-img {
+      width: 100%;
+      height: 100%;
+      border-radius: 50%;
+      object-fit: cover;
+      background: #222;
+      display: block;
+    }
 
-        .badge-live {
-            display: inline-flex;
-            align-items: center;
-            gap: 6px;
-            background: rgba(34, 197, 94, 0.1);
-            border: 1px solid rgba(34, 197, 94, 0.2);
-            color: var(--green-glow);
-            padding: 6px 12px;
-            border-radius: 20px;
-            font-size: 11px;
-            font-weight: 600;
-            letter-spacing: 0.3px;
-        }
+    /* Titles */
+    .title {
+      font-family: 'Cinzel', serif;
+      font-size: 22px;
+      font-weight: 700;
+      margin-bottom: 6px;
+      color: #ffffff;
+    }
 
-        .pulse-dot {
-            width: 6px;
-            height: 6px;
-            background-color: var(--green-glow);
-            border-radius: 50%;
-            box-shadow: 0 0 8px var(--green-glow);
-            animation: pulse 1.8s infinite;
-        }
+    .subtitle {
+      font-size: 13.5px;
+      color: var(--text-muted);
+      margin-bottom: 24px;
+    }
 
-        @keyframes pulse {
-            0% { opacity: 1; transform: scale(1); }
-            50% { opacity: 0.4; transform: scale(1.2); }
-            100% { opacity: 1; transform: scale(1); }
-        }
+    /* Feature List Box */
+    .feature-box {
+      background: rgba(255, 255, 255, 0.02);
+      border: 1px solid rgba(255, 255, 255, 0.07);
+      border-radius: 14px;
+      overflow: hidden;
+      margin-bottom: 26px;
+    }
 
-        .profile-section {
-            text-align: center;
-            margin-bottom: 28px;
-        }
+    .feature-item {
+      display: flex;
+      align-items: center;
+      padding: 14px 16px;
+      font-size: 13.5px;
+      font-weight: 500;
+      color: #e0e0e0;
+      border-bottom: 1px solid rgba(255, 255, 255, 0.05);
+      text-align: left;
+    }
 
-        .profile-pic-wrapper {
-            position: relative;
-            width: 96px;
-            height: 96px;
-            margin: 0 auto 16px auto;
-        }
+    .feature-item:last-child {
+      border-bottom: none;
+    }
 
-        .profile-pic-wrapper img {
-            width: 100%;
-            height: 100%;
-            object-fit: cover;
-            border-radius: 50%;
-            border: 2px solid rgba(255, 255, 255, 0.15);
-            padding: 3px;
-        }
+    .feature-icon {
+      font-size: 16px;
+      margin-right: 12px;
+      width: 20px;
+      text-align: center;
+    }
 
-        .verified-badge {
-            position: absolute;
-            bottom: 2px;
-            right: 2px;
-            background: var(--accent-blue);
-            width: 24px;
-            height: 24px;
-            border-radius: 50%;
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            border: 2px solid var(--bg-main);
-        }
+    /* Telegram CTA Button */
+    .cta-text {
+      font-size: 13px;
+      color: var(--text-muted);
+      margin-bottom: 14px;
+    }
 
-        .verified-badge svg {
-            width: 12px;
-            height: 12px;
-            fill: #ffffff;
-        }
+    .cta-button {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      gap: 10px;
+      width: 100%;
+      padding: 15px;
+      background: var(--btn-bg);
+      color: #000;
+      font-weight: 700;
+      font-size: 15px;
+      letter-spacing: 0.5px;
+      border-radius: 12px;
+      text-decoration: none;
+      box-shadow: var(--btn-shadow);
+      transition: transform 0.15s ease;
+      border: none;
+      cursor: pointer;
+    }
 
-        .profile-title {
-            font-size: 22px;
-            font-weight: 800;
-            letter-spacing: -0.5px;
-            color: var(--text-primary);
-            margin-bottom: 4px;
-            line-height: 1.3;
-        }
+    .cta-button:active {
+      transform: scale(0.98);
+    }
 
-        .profile-subtitle {
-            font-size: 13px;
-            color: var(--text-secondary);
-            font-weight: 500;
-            margin-bottom: 16px;
-        }
+    .cta-subtext {
+      font-size: 11px;
+      color: #666666;
+      margin-top: 10px;
+      margin-bottom: 24px;
+    }
 
-        .cta-button {
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            gap: 10px;
-            width: 100%;
-            background: linear-gradient(135deg, #2AABEE 0%, #229ED9 100%);
-            color: #ffffff;
-            font-weight: 700;
-            font-size: 15px;
-            padding: 16px;
-            border-radius: 16px;
-            text-decoration: none;
-            box-shadow: 0 10px 25px var(--accent-glow);
-            position: relative;
-            overflow: hidden;
-            transition: background 0.3s ease, box-shadow 0.3s ease;
-        }
+    /* Quote Box */
+    .quote-box {
+      font-size: 13.5px;
+      line-height: 1.5;
+      color: #d1d1d1;
+      margin-bottom: 24px;
+      padding: 0 5px;
+    }
 
-        .cta-button:hover {
-            box-shadow: 0 14px 30px rgba(34, 158, 217, 0.5);
-        }
+    /* Disclaimers & Footer */
+    .disclaimer-text {
+      font-size: 10px;
+      color: #555555;
+      line-height: 1.4;
+      margin-bottom: 8px;
+    }
 
-        .cta-button svg {
-            width: 20px;
-            height: 20px;
-            fill: #ffffff;
-        }
+    .fb-disclaimer {
+      font-size: 10px;
+      color: #444444;
+      margin-bottom: 12px;
+    }
 
-        .stats-grid {
-            display: grid;
-            grid-template-columns: repeat(3, 1fr);
-            gap: 10px;
-            margin-bottom: 24px;
-        }
+    .footer-links {
+      display: flex;
+      justify-content: center;
+      flex-wrap: wrap;
+      gap: 6px;
+      font-size: 11px;
+      color: #666;
+    }
 
-        .stat-card {
-            background: var(--card-bg);
-            border: 1px solid var(--card-border);
-            border-radius: 16px;
-            padding: 14px 8px;
-            text-align: center;
-        }
+    .footer-links button {
+      background: none;
+      border: none;
+      color: #888888;
+      text-decoration: underline;
+      cursor: pointer;
+      font-size: 11px;
+    }
 
-        .stat-value {
-            font-size: 16px;
-            font-weight: 700;
-            color: var(--text-primary);
-        }
+    .footer-links button:hover {
+      color: var(--text-gold);
+    }
 
-        .stat-value.highlight {
-            color: var(--accent-blue);
-        }
+    /* Popup Modal CSS */
+    .modal-overlay {
+      position: fixed;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      background: rgba(0, 0, 0, 0.8);
+      backdrop-filter: blur(4px);
+      display: none;
+      justify-content: center;
+      align-items: center;
+      z-index: 9999;
+      padding: 20px;
+    }
 
-        .stat-label {
-            font-size: 10px;
-            color: var(--text-secondary);
-            text-transform: uppercase;
-            letter-spacing: 0.5px;
-            margin-top: 4px;
-            font-weight: 600;
-        }
+    .modal-overlay.active {
+      display: flex;
+    }
 
-        .features-container {
-            display: flex;
-            flex-direction: column;
-            gap: 12px;
-            margin-bottom: 28px;
-        }
+    .modal-card {
+      background: #18181c;
+      border: 1px solid var(--gold-border);
+      border-radius: 18px;
+      max-width: 400px;
+      width: 100%;
+      max-height: 80vh;
+      overflow-y: auto;
+      padding: 24px;
+      position: relative;
+      text-align: left;
+    }
 
-        .feature-item {
-            background: var(--card-bg);
-            border: 1px solid var(--card-border);
-            border-radius: 16px;
-            padding: 14px 16px;
-            display: flex;
-            align-items: center;
-            gap: 14px;
-        }
+    .modal-title {
+      font-size: 18px;
+      font-weight: 700;
+      color: var(--text-gold);
+      margin-bottom: 12px;
+    }
 
-        .feature-icon-box {
-            width: 40px;
-            height: 40px;
-            border-radius: 12px;
-            background: rgba(34, 158, 217, 0.1);
-            border: 1px solid rgba(34, 158, 217, 0.2);
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            flex-shrink: 0;
-        }
+    .modal-content {
+      font-size: 12.5px;
+      color: #cccccc;
+      line-height: 1.6;
+    }
 
-        .feature-icon-box svg {
-            width: 20px;
-            height: 20px;
-            stroke: var(--accent-blue);
-        }
+    .modal-content p {
+      margin-bottom: 10px;
+    }
 
-        .feature-info h4 {
-            font-size: 14px;
-            font-weight: 600;
-            color: var(--text-primary);
-        }
+    .modal-content a {
+      color: var(--text-gold);
+      word-break: break-all;
+    }
 
-        .feature-info p {
-            font-size: 12px;
-            color: var(--text-secondary);
-            margin-top: 2px;
-        }
-
-        .footer-info {
-            text-align: center;
-            margin-top: 20px;
-        }
-
-        .active-users-count {
-            font-size: 11px;
-            color: var(--text-secondary);
-            margin-bottom: 12px;
-        }
-
-        .footer-links {
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            gap: 10px;
-            flex-wrap: wrap;
-            margin-bottom: 12px;
-        }
-
-        .footer-link-btn {
-            background: none;
-            border: none;
-            color: var(--text-secondary);
-            font-size: 11px;
-            font-weight: 500;
-            cursor: pointer;
-            transition: color 0.2s ease;
-            padding: 2px 4px;
-        }
-
-        .footer-link-btn:hover {
-            color: var(--accent-blue);
-            text-decoration: underline;
-        }
-
-        .footer-separator {
-            color: rgba(255, 255, 255, 0.2);
-            font-size: 10px;
-        }
-
-        .copyright-text {
-            font-size: 10px;
-            color: rgba(255, 255, 255, 0.3);
-        }
-
-        .modal-overlay {
-            position: fixed;
-            top: 0;
-            left: 0;
-            width: 100%;
-            height: 100%;
-            background: rgba(0, 0, 0, 0.8);
-            backdrop-filter: blur(8px);
-            -webkit-backdrop-filter: blur(8px);
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            z-index: 1000;
-            opacity: 0;
-            visibility: hidden;
-            transition: all 0.3s ease;
-            padding: 16px;
-        }
-
-        .modal-overlay.active {
-            opacity: 1;
-            visibility: visible;
-        }
-
-        .modal-card {
-            background: #12141d;
-            border: 1px solid var(--card-border);
-            border-radius: 20px;
-            width: 100%;
-            max-width: 420px;
-            max-height: 80vh;
-            display: flex;
-            flex-direction: column;
-            box-shadow: 0 20px 40px rgba(0, 0, 0, 0.8);
-            transform: scale(0.9);
-            transition: transform 0.3s ease;
-            overflow: hidden;
-        }
-
-        .modal-overlay.active .modal-card {
-            transform: scale(1);
-        }
-
-        .modal-header {
-            display: flex;
-            justify-content: space-between;
-            align-items: center;
-            padding: 16px 20px;
-            border-bottom: 1px solid var(--card-border);
-        }
-
-        .modal-title {
-            font-size: 15px;
-            font-weight: 700;
-            color: var(--text-primary);
-        }
-
-        .modal-close-btn {
-            background: rgba(255, 255, 255, 0.05);
-            border: 1px solid var(--card-border);
-            color: var(--text-secondary);
-            width: 28px;
-            height: 28px;
-            border-radius: 50%;
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            cursor: pointer;
-            transition: all 0.2s ease;
-            font-size: 16px;
-        }
-
-        .modal-close-btn:hover {
-            background: rgba(255, 255, 255, 0.15);
-            color: var(--text-primary);
-        }
-
-        .modal-body {
-            padding: 20px;
-            overflow-y: auto;
-            color: var(--text-secondary);
-            font-size: 12px;
-            line-height: 1.6;
-        }
-
-        .modal-body h5 {
-            color: var(--text-primary);
-            font-size: 13px;
-            margin-top: 10px;
-            margin-bottom: 4px;
-        }
-
-        .modal-body p {
-            margin-bottom: 10px;
-        }
-
-        .modal-body p:last-child {
-            margin-bottom: 0;
-        }
-    </style>
-    <!-- Meta Pixel Code -->
-    <script>
-    !function(f,b,e,v,n,t,s)
-    {if(f.fbq)return;n=f.fbq=function(){n.callMethod?
-    n.callMethod.apply(n,arguments):n.queue.push(arguments)};
-    if(!f._fbq)f._fbq=n;n.push=n;n.loaded=!0;n.version='2.0';
-    n.queue=[];t=b.createElement(e);t.async=!0;
-    t.src=v;s=b.getElementsByTagName(e)[0];
-    s.parentNode.insertBefore(t,s)}(window, document,'script',
-    'https://connect.facebook.net/en_US/fbevents.js');
-    fbq('init', '920501367778655');
-    fbq('track', 'PageView');
-    </script>
-    <noscript><img height="1" width="1" style="display:none"
-    src="https://www.facebook.com/tr?id=920501367778655&ev=PageView&noscript=1"
-    /></noscript>
-    <!-- End Meta Pixel Code -->
+    .close-btn {
+      position: absolute;
+      top: 14px;
+      right: 14px;
+      background: rgba(255, 255, 255, 0.1);
+      border: none;
+      color: #fff;
+      font-size: 18px;
+      width: 28px;
+      height: 28px;
+      border-radius: 50%;
+      cursor: pointer;
+    }
+  </style>
 </head>
 <body>
 
-    <div class="page-container">
-        <!-- Top Status Bar -->
-        <div class="top-bar">
-            <div class="badge-live">
-                <span class="pulse-dot"></span>
-                Free Access Open
-            </div>
-        </div>
-
-        <!-- Profile Section -->
-        <div class="profile-section">
-            <div class="profile-pic-wrapper">
-                <img src="Salman.jpeg" alt="𝗦𝗔𝗟𝗠𝗔𝗡 𝗠𝗘𝗠𝗢𝗡 𝗧𝗥𝗔𝗗𝗘𝗥 𝗜𝗡𝗗𝗜𝗔 (𝗛𝗮𝗹𝗮𝗹 𝗪𝗼𝗿𝗸)">
-                <div class="verified-badge">
-                    <svg viewBox="0 0 24 24"><path d="M9 16.17L4.83 12l-1.42 1.41L9 19 21 7l-1.41-1.41z"/></svg>
-                </div>
-            </div>
-            <h1 class="profile-title">𝗦𝗔𝗟𝗠𝗔𝗡 𝗠𝗘𝗠𝗢𝗡 𝗧𝗥𝗔𝗗𝗘𝗥</h1>
-            <p class="profile-subtitle">Market Analyst & Strategy Expert</p>
-
-            <!-- Telegram CTA Button #1 (Name ke niche) -->
-            <a href="https://t.me/+dcGpL_RyuDlkZWQ1" target="_blank" class="cta-button" onclick="fbq('track', 'Lead'); fbq('track', 'Subscribe', {value: '1.00', currency: 'INR', time: new Date().toISOString()}); fbq('trackCustom', 'TelegramSubscriberRealtime', {timestamp: Date.now()});">
-                <svg viewBox="0 0 24 24"><path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm4.64 6.8c-.15 1.58-.8 5.42-1.13 7.19-.14.75-.42 1-.68 1.03-.58.05-1.02-.38-1.58-.75-.88-.58-1.38-.94-2.23-1.5-.99-.65-.35-1.01.22-1.59.15-.15 2.71-2.48 2.76-2.69.01-.03.01-.14-.07-.2-.08-.06-.19-.04-.27-.02-.12.03-1.99 1.27-5.62 3.72-.53.36-1.01.54-1.44.53-.47-.01-1.37-.26-2.03-.48-.82-.27-1.47-.42-1.42-.88.03-.24.35-.49.96-.75 3.78-1.65 6.31-2.74 7.58-3.27 3.61-1.51 4.36-1.77 4.85-1.78.11 0 .35.03.5.15.13.11.17.26.19.37.02.11.03.35.01.54z"/></svg>
-                Join Free Telegram Channel
-            </a>
-        </div>
-
-        <!-- Highlights Grid -->
-        <div class="stats-grid">
-            <div class="stat-card">
-                <div class="stat-value">Daily</div>
-                <div class="stat-label">Market Tips</div>
-            </div>
-            <div class="stat-card">
-                <div class="stat-value highlight">Real-Time</div>
-                <div class="stat-label">Live Alerts</div>
-            </div>
-            <div class="stat-card">
-                <div class="stat-value">100%</div>
-                <div class="stat-label">Free Join</div>
-            </div>
-        </div>
-
-        <!-- Feature List -->
-        <div class="features-container">
-            <div class="feature-item">
-                <div class="feature-icon-box">
-                    <svg viewBox="0 0 24 24" fill="none" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M3 3v18h18"/><path d="M18 17V9"/><path d="M13 17V5"/><path d="M8 17v-3"/></svg>
-                </div>
-                <div class="feature-info">
-                    <h4>Market Analysis</h4>
-                    <p>Daily stats, breakdown & sharp insights</p>
-                </div>
-            </div>
-
-            <div class="feature-item">
-                <div class="feature-icon-box">
-                    <svg viewBox="0 0 24 24" fill="none" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M13 2L3 14h9l-1 8 10-12h-9l1-8z"/></svg>
-                </div>
-                <div class="feature-info">
-                    <h4>Instant Alerts</h4>
-                    <p>Direct updates & signal notifications</p>
-                </div>
-            </div>
-
-            <div class="feature-item">
-                <div class="feature-icon-box">
-                    <svg viewBox="0 0 24 24" fill="none" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"/><path d="m9 12 2 2 4-4"/></svg>
-                </div>
-                <div class="feature-info">
-                    <h4>Proven Strategies</h4>
-                    <p>Guidance designed for high accuracy</p>
-                </div>
-            </div>
-        </div>
-
-        <!-- Telegram CTA Button #2 (Pahle wali jagah) -->
-        <a href="https://t.me/+dcGpL_RyuDlkZWQ1" target="_blank" class="cta-button" onclick="fbq('track', 'Lead'); fbq('track', 'Subscribe', {value: '1.00', currency: 'INR', time: new Date().toISOString()}); fbq('trackCustom', 'TelegramSubscriberRealtime', {timestamp: Date.now()});">
-            <svg viewBox="0 0 24 24"><path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm4.64 6.8c-.15 1.58-.8 5.42-1.13 7.19-.14.75-.42 1-.68 1.03-.58.05-1.02-.38-1.58-.75-.88-.58-1.38-.94-2.23-1.5-.99-.65-.35-1.01.22-1.59.15-.15 2.71-2.48 2.76-2.69.01-.03.01-.14-.07-.2-.08-.06-.19-.04-.27-.02-.12.03-1.99 1.27-5.62 3.72-.53.36-1.01.54-1.44.53-.47-.01-1.37-.26-2.03-.48-.82-.27-1.47-.42-1.42-.88.03-.24.35-.49.96-.75 3.78-1.65 6.31-2.74 7.58-3.27 3.61-1.51 4.36-1.77 4.85-1.78.11 0 .35.03.5.15.13.11.17.26.19.37.02.11.03.35.01.54z"/></svg>
-            Join Free Telegram Channel
-        </a>
-
-        <!-- Footer -->
-        <div class="footer-info">
-            <p class="active-users-count">⚡ Fast growing community • Free forever</p>
-            
-            <!-- Popup Trigger Links -->
-            <div class="footer-links">
-                <button class="footer-link-btn" onclick="openModal('about')">About Us</button>
-                <span class="footer-separator">•</span>
-                <button class="footer-link-btn" onclick="openModal('terms')">Terms</button>
-                <span class="footer-separator">•</span>
-                <button class="footer-link-btn" onclick="openModal('disclaimer')">Disclaimer</button>
-                <span class="footer-separator">•</span>
-                <button class="footer-link-btn" onclick="openModal('contact')">Contact Us</button>
-            </div>
-
-            <p class="copyright-text">© 2026 𝗦𝗔𝗟𝗠𝗔𝗡 𝗠𝗘𝗠𝗢𝗡 𝗧𝗥𝗔𝗗𝗘𝗥 𝗜𝗡𝗗𝗜𝗔 (𝗛𝗮𝗹𝗮𝗹 𝗪𝗼𝗿𝗸). All rights reserved.</p>
-        </div>
+  <!-- Main Card Container -->
+  <div class="landing-card">
+    
+    <!-- Profile Photo -->
+    <div class="profile-container">
+      <img class="profile-img" src="YOUR_IMAGE_URL_HERE.jpg" alt="Official Hafez Shakeel">
     </div>
 
-    <!-- Modal / Popup Container -->
-    <div class="modal-overlay" id="modalOverlay" onclick="closeModalOnOverlay(event)">
-        <div class="modal-card">
-            <div class="modal-header">
-                <h4 class="modal-title" id="modalTitle">Title</h4>
-                <button class="modal-close-btn" onclick="closeModal()">&times;</button>
-            </div>
-            <div class="modal-body" id="modalBody">
-                <!-- Content injected dynamically -->
-            </div>
-        </div>
+    <!-- Title & Subtitle -->
+    <h1 class="title">Official Hafez Shakeel</h1>
+    <p class="subtitle">Learning and Learning Community</p>
+
+    <!-- Feature List -->
+    <div class="feature-box">
+      <div class="feature-item">
+        <span class="feature-icon">🌐</span>
+        <span>Educational and Awareness Sessions</span>
+      </div>
+      <div class="feature-item">
+        <span class="feature-icon">📊</span>
+        <span>Market Concepts and Awareness</span>
+      </div>
+      <div class="feature-item">
+        <span class="feature-icon">💎</span>
+        <span>Chart Reading Concepts</span>
+      </div>
+      <div class="feature-item">
+        <span class="feature-icon">💻</span>
+        <span>Educational Case Discussions</span>
+      </div>
     </div>
 
-    <script>
-        const modalData = {
-            about: {
-                title: "About Us",
-                content: `
-                    <p>Welcome to <strong>𝗦𝗔𝗟𝗠𝗔𝗡 𝗠𝗘𝗠𝗢𝗡 𝗧𝗥𝗔𝗗𝗘𝗥 𝗜𝗡𝗗𝗜𝗔 (𝗛𝗮𝗹𝗮𝗹 𝗪𝗼𝗿𝗸)</strong>.</p>
-                    <p>We share market insights, real-time strategy updates, and educational guidance tailored for ethical and Halal-compliant trading practices.</p>
-                    <p>Our objective is to help traders understand market movements with clarity and discipline.</p>
-                `
-            },
-            terms: {
-                title: "Terms & Conditions",
-                content: `
-                    <h5>1. Educational Content</h5>
-                    <p>All information, ideas, and updates shared are strictly for educational and informational purposes.</p>
-                    <h5>2. Risk Responsibility</h5>
-                    <p>Trading financial markets contains inherent risk. Users are responsible for their own investment decisions.</p>
-                    <h5>3. Acceptance</h5>
-                    <p>By using this website/channel, you agree to abide by these terms and conditions.</p>
-                `
-            },
-            disclaimer: {
-                title: "Disclaimer",
-                content: `
-                    <p><strong>Financial Risk Warning:</strong> Stock and market trading involves substantial risk of loss and is not suitable for everyone.</p>
-                    <p>We are not SEBI registered advisors. Information provided here does not constitute financial or investment advice.</p>
-                    <p>Always perform your own research and consult with a certified financial advisor before taking positions.</p>
-                `
-            },
-            contact: {
-                title: "Contact Us",
-                content: `
-                    <p>Feel free to get in touch with us through our official support channel.</p>
-                    <h5>Official Telegram Channel:</h5>
-                    <p><a href="https://t.me/+dcGpL_RyuDlkZWQ1" target="_blank" style="color: var(--accent-blue);">Click to Join Channel</a></p>
-                    <h5>Support Email:</h5>
-                    <p>support@salmanmemontrader.com</p>
-                `
-            }
-        };
+    <!-- Telegram CTA -->
+    <p class="cta-text">Join the educational community on Telegram</p>
+    <a href="https://t.me/+inrfstkixIQxMjdl" target="_blank" rel="noopener noreferrer" class="cta-button">
+      <svg width="18" height="15" viewBox="0 0 18 15" fill="none" xmlns="http://www.w3.org/2000/svg">
+        <path d="M16.9242 0.707018C16.6978 0.490768 16.3758 0.417018 16.0827 0.517518L0.982704 5.76752C0.603204 5.90027 0.358203 6.25727 0.370203 6.65852C0.382203 7.05977 0.648204 7.40477 1.0317 7.51427L4.7667 8.58077L7.0532 13.9118C7.2002 14.2545 7.5332 14.4788 7.9042 14.4788C8.0417 14.4788 8.1802 14.4398 8.3032 14.3618L10.8717 12.7268L14.0752 14.9708C14.3312 15.1501 14.6492 15.2018 14.9452 15.1118C15.2412 15.0218 15.4792 14.8013 15.5942 14.5118L17.5942 1.63677C17.6852 1.30602 17.5502 0.923268 16.9242 0.707018ZM13.8822 3.32177L6.8732 9.07052L5.8082 8.11052L13.8822 3.32177Z" fill="black"/>
+      </svg>
+      JOIN TELEGRAM
+    </a>
+    <p class="cta-subtext">Telegram will open in the new tab</p>
 
-        function openModal(key) {
-            const data = modalData[key];
-            if (data) {
-                document.getElementById('modalTitle').innerText = data.title;
-                document.getElementById('modalBody').innerHTML = data.content;
-                document.getElementById('modalOverlay').classList.add('active');
-            }
-        }
+    <!-- Quote -->
+    <div class="quote-box">
+      The intentions should be good and the hard work should be true. So there is definitely success.
+    </div>
 
-        function closeModal() {
-            document.getElementById('modalOverlay').classList.remove('active');
-        }
+    <!-- Disclaimers -->
+    <p class="disclaimer-text">Educational content only. This page does not guarantee any kind of profit or financial income.</p>
+    <p class="fb-disclaimer">This site is not part of Facebook™ and is not endorsed by Facebook™.</p>
 
-        function closeModalOnOverlay(e) {
-            if (e.target.id === 'modalOverlay') {
-                closeModal();
-            }
-        }
-    </script>
+    <!-- Footer Popup Links -->
+    <div class="footer-links">
+      <button onclick="openModal('terms')">Terms</button> •
+      <button onclick="openModal('privacy')">Privacy</button> •
+      <button onclick="openModal('disclaimer')">Disclaimer</button> •
+      <button onclick="openModal('about')">About</button> •
+      <button onclick="openModal('contact')">Contact Us</button>
+    </div>
+
+  </div>
+
+  <!-- Modal Popup Box -->
+  <div class="modal-overlay" id="modalOverlay" onclick="closeModalOnOverlay(event)">
+    <div class="modal-card">
+      <button class="close-btn" onclick="closeModal()">&times;</button>
+      <h2 class="modal-title" id="modalTitle">Modal Title</h2>
+      <div class="modal-content" id="modalBody"></div>
+    </div>
+  </div>
+
+  <script>
+    // Popup Modal Data
+    const modalData = {
+      terms: {
+        title: "Terms & Conditions",
+        content: "<p>Welcome to Official Hafez Shakeel educational platform. By accessing this page, you agree to comply with our terms.</p><p>All content provided here is strictly for educational and awareness purposes only.</p>"
+      },
+      privacy: {
+        title: "Privacy Policy",
+        content: "<p>Your privacy is important to us. We do not collect or store any personal data on this landing page.</p><p>When clicking external links like Telegram, third-party privacy policies apply.</p>"
+      },
+      disclaimer: {
+        title: "Disclaimer",
+        content: "<p>Educational Content Only: Content shared across our channels is meant solely for market learning and case discussions.</p><p>This page does not guarantee any kind of profit or financial income.</p>"
+      },
+      about: {
+        title: "About Us",
+        content: "<p>Official Hafez Shakeel is dedicated to teaching market concepts, chart reading, and structured analysis to build an aware community.</p>"
+      },
+      contact: {
+        title: "Contact Us",
+        content: "<p>For educational inquiries, reach out to us directly on our official Telegram channel.</p><p><strong>Telegram:</strong> <a href='https://t.me/+inrfstkixIQxMjdl' target='_blank'>Join Telegram Channel</a></p>"
+      }
+    };
+
+    function openModal(type) {
+      if (modalData[type]) {
+        document.getElementById('modalTitle').innerText = modalData[type].title;
+        document.getElementById('modalBody').innerHTML = modalData[type].content;
+        document.getElementById('modalOverlay').classList.add('active');
+      }
+    }
+
+    function closeModal() {
+      document.getElementById('modalOverlay').classList.remove('active');
+    }
+
+    function closeModalOnOverlay(e) {
+      if (e.target.id === 'modalOverlay') closeModal();
+    }
+  </script>
 
 </body>
 </html>
