@@ -83,45 +83,14 @@
     .subtitle {
       font-size: 13.5px;
       color: var(--text-muted);
-      margin-bottom: 24px;
+      margin-bottom: 20px;
     }
 
-    /* Feature List Box */
-    .feature-box {
-      background: rgba(255, 255, 255, 0.02);
-      border: 1px solid rgba(255, 255, 255, 0.07);
-      border-radius: 14px;
-      overflow: hidden;
-      margin-bottom: 26px;
-    }
-
-    .feature-item {
-      display: flex;
-      align-items: center;
-      padding: 14px 16px;
-      font-size: 13.5px;
-      font-weight: 500;
-      color: #e0e0e0;
-      border-bottom: 1px solid rgba(255, 255, 255, 0.05);
-      text-align: left;
-    }
-
-    .feature-item:last-child {
-      border-bottom: none;
-    }
-
-    .feature-icon {
-      font-size: 16px;
-      margin-right: 12px;
-      width: 20px;
-      text-align: center;
-    }
-
-    /* Telegram CTA Button */
+    /* Telegram CTA Button (Directly under name & subtitle) */
     .cta-text {
       font-size: 13px;
       color: var(--text-muted);
-      margin-bottom: 14px;
+      margin-bottom: 12px;
     }
 
     .cta-button {
@@ -153,6 +122,37 @@
       color: #666666;
       margin-top: 10px;
       margin-bottom: 24px;
+    }
+
+    /* Feature List Box */
+    .feature-box {
+      background: rgba(255, 255, 255, 0.02);
+      border: 1px solid rgba(255, 255, 255, 0.07);
+      border-radius: 14px;
+      overflow: hidden;
+      margin-bottom: 24px;
+    }
+
+    .feature-item {
+      display: flex;
+      align-items: center;
+      padding: 14px 16px;
+      font-size: 13.5px;
+      font-weight: 500;
+      color: #e0e0e0;
+      border-bottom: 1px solid rgba(255, 255, 255, 0.05);
+      text-align: left;
+    }
+
+    .feature-item:last-child {
+      border-bottom: none;
+    }
+
+    .feature-icon {
+      font-size: 16px;
+      margin-right: 12px;
+      width: 20px;
+      text-align: center;
     }
 
     /* Quote Box */
@@ -284,6 +284,16 @@
     <h1 class="title">Official Hafez Shakeel</h1>
     <p class="subtitle">Learning and Learning Community</p>
 
+    <!-- Telegram CTA (Placed right below name) -->
+    <p class="cta-text">Join the educational community on Telegram</p>
+    <a href="https://t.me/+inrfstkixIQxMjdl" target="_blank" rel="noopener noreferrer" class="cta-button">
+      <svg width="18" height="15" viewBox="0 0 18 15" fill="none" xmlns="http://www.w3.org/2000/svg">
+        <path d="M16.9242 0.707018C16.6978 0.490768 16.3758 0.417018 16.0827 0.517518L0.982704 5.76752C0.603204 5.90027 0.358203 6.25727 0.370203 6.65852C0.382203 7.05977 0.648204 7.40477 1.0317 7.51427L4.7667 8.58077L7.0532 13.9118C7.2002 14.2545 7.5332 14.4788 7.9042 14.4788C8.0417 14.4788 8.1802 14.4398 8.3032 14.3618L10.8717 12.7268L14.0752 14.9708C14.3312 15.1501 14.6492 15.2018 14.9452 15.1118C15.2412 15.0218 15.4792 14.8013 15.5942 14.5118L17.5942 1.63677C17.6852 1.30602 17.5502 0.923268 16.9242 0.707018ZM13.8822 3.32177L6.8732 9.07052L5.8082 8.11052L13.8822 3.32177Z" fill="black"/>
+      </svg>
+      JOIN TELEGRAM
+    </a>
+    <p class="cta-subtext">Telegram will open in the new tab</p>
+
     <!-- Feature List -->
     <div class="feature-box">
       <div class="feature-item">
@@ -303,16 +313,6 @@
         <span>Educational Case Discussions</span>
       </div>
     </div>
-
-    <!-- Telegram CTA -->
-    <p class="cta-text">Join the educational community on Telegram</p>
-    <a href="https://t.me/+inrfstkixIQxMjdl" target="_blank" rel="noopener noreferrer" class="cta-button">
-      <svg width="18" height="15" viewBox="0 0 18 15" fill="none" xmlns="http://www.w3.org/2000/svg">
-        <path d="M16.9242 0.707018C16.6978 0.490768 16.3758 0.417018 16.0827 0.517518L0.982704 5.76752C0.603204 5.90027 0.358203 6.25727 0.370203 6.65852C0.382203 7.05977 0.648204 7.40477 1.0317 7.51427L4.7667 8.58077L7.0532 13.9118C7.2002 14.2545 7.5332 14.4788 7.9042 14.4788C8.0417 14.4788 8.1802 14.4398 8.3032 14.3618L10.8717 12.7268L14.0752 14.9708C14.3312 15.1501 14.6492 15.2018 14.9452 15.1118C15.2412 15.0218 15.4792 14.8013 15.5942 14.5118L17.5942 1.63677C17.6852 1.30602 17.5502 0.923268 16.9242 0.707018ZM13.8822 3.32177L6.8732 9.07052L5.8082 8.11052L13.8822 3.32177Z" fill="black"/>
-      </svg>
-      JOIN TELEGRAM
-    </a>
-    <p class="cta-subtext">Telegram will open in the new tab</p>
 
     <!-- Quote -->
     <div class="quote-box">
